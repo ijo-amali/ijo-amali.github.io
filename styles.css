@@ -1,0 +1,87 @@
+:root {
+    --text-color:         rgb(69, 46, 71);
+    --link-color:         rgb(63, 29, 78);
+    --clicked-link-color: rgb(105, 24, 151);
+    --fancy-text:         rgb(32, 67, 170);
+}
+
+@font-face {
+    font-family: "AveriaSerifLibre";
+    src: url('/fonts/AveriaSerifLibre-Regular.ttf');
+}
+/* 
+@font-face {
+    font-family: "UnderwoodTypewriter";
+    src: url('/fonts/zai_Olivetti-UnderwoodStudio21Typewriter.otf');
+} */
+
+body {
+    background-color: rgb(180, 126, 151);
+    color: var(--text-color);
+    font-family: "AveriaSerifLibre", "Averia Serif Libre", "Cambria", serif;
+}
+
+ul {
+    list-style-type: lower-greek;
+    padding-left: none;
+}
+
+#paper-texture {
+    opacity: 0.25;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    /*min-width: 100%;*/
+}
+
+.menu-bar {
+    padding: 3rem 0 7rem 0;
+}
+
+h1 {
+    height: 2.1em;
+    line-height: 100px;
+    text-align: center;
+    color: var(--fancy-text);
+    text-shadow: 0 0 3px color-mix(in hsl, var(--fancy-text), purple);
+    /* font-family: "UnderwoodTypewriter", "zai Olivetti-Underwood Studio 21 Typewriter", "Cambria", serif; */
+}
+
+.subtitle {
+    color: color-mix(in hsl, var(--fancy-text), gray);
+    text-shadow: 0 0 1px purple;
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    margin-top: -2em;
+}
+
+a.button {
+    padding-top: 1rem;
+    line-height: 100px;
+    text-align: center;
+    color: var(--clicked-link-color);
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
+a {
+    color: var(--clicked-link-color);
+}
+
+.body-text {
+    background-color: rgba(252, 216, 255, 0.829);    font-size: 2rem;
+    text-align: justify;
+    padding: 1em;
+}
+
+a#current-page {
+    text-transform: uppercase;
+    text-decoration: underline;
+    /* color: color-mix() */
+}
+
+hr {
+    border: 1px solid var(--text-color);
+}
