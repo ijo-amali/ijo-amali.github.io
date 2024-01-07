@@ -31,7 +31,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    
+    /* make unable to drag */
     /*min-width: 100%;*/
 }
 
@@ -68,6 +68,7 @@ a.button {
 
 a {
     color: var(--clicked-link-color);
+    text-decoration: wavy underline;
 }
 
 .body-text {
@@ -84,4 +85,8 @@ a#current-page {
 
 hr {
     border: 1px solid var(--text-color);
+}
+
+.beeper {
+    padding: 1rem 0 !important;
 }
