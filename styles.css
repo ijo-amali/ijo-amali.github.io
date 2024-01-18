@@ -3,6 +3,7 @@
     --link-color:         rgb(63, 29, 78);
     --clicked-link-color: rgb(105, 24, 151);
     --fancy-text:         rgb(32, 67, 170);
+    --box-background:      rgb(210, 171, 221);
 }
 
 @font-face {
@@ -31,8 +32,15 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    /* make unable to drag */
     /*min-width: 100%;*/
+    /* makes unable to drag: */
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
 
 .menu-bar {
@@ -68,7 +76,7 @@ a.button {
 
 a {
     color: var(--clicked-link-color);
-    text-decoration: wavy underline;
+    text-decoration: dashed underline;
 }
 
 .body-text {
@@ -89,4 +97,21 @@ hr {
 
 .beeper {
     padding: 1rem 0 !important;
+}
+
+.socialcontainer {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.social {
+    background-color: var(--box-background);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3px color-mix(in hsl, var(--box-background), purple);
+}
+
+.social img {
+    height: 1em;
 }
