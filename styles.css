@@ -80,6 +80,7 @@ a.button {
     color: var(--clicked-link-color);
     font-size: var(--body-font-size);
     text-transform: lowercase;
+    text-shadow: 0 0 1px var(--clicked-link-color);
 }
 
 a {
