@@ -132,10 +132,10 @@ hr {
     }
 } */
 
-/* @font-face {
+@font-face {
     font-family: "linja lipamanka";
     src: url("/fonts/linjalipamanka-normal.otf");
-} */
+}
 
 .sitelen-pona {
     font-size: calc(var(--body-font-size) + 1.2rem);
