@@ -1,9 +1,14 @@
+/* @import "https://davidar.github.io/linja-pona/stylesheet.css"; /* for sitelen pona */
+
 :root {
     --text-color:         rgb(69, 46, 71);
     --link-color:         rgb(63, 29, 78);
     --clicked-link-color: rgb(105, 24, 151);
     --fancy-text:         rgb(32, 67, 170);
     --box-background:      rgb(210, 171, 221);
+    
+    --body-font-size: 2rem;
+    --h2-font-size: 3.6rem;
 }
 
 @font-face {
@@ -37,7 +42,7 @@ ul {
     width: 100%;
     /*min-width: 100%;*/
     /* makes unable to drag: */
-    user-drag: none; 
+    /* user-drag: none;  */
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -63,7 +68,7 @@ h1 {
     color: color-mix(in hsl, var(--fancy-text), gray);
     text-shadow: 0 0 1px purple;
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--body-font-size);
     display: block;
     margin-top: -2em;
 }
@@ -73,7 +78,7 @@ a.button {
     line-height: 100px;
     text-align: center;
     color: var(--clicked-link-color);
-    font-size: 2rem;
+    font-size: var(--body-font-size);
     text-transform: lowercase;
 }
 
@@ -83,7 +88,8 @@ a {
 }
 
 .body-text {
-    background-color: rgba(252, 216, 255, 0.829);    font-size: 2rem;
+    background-color: rgba(252, 216, 255, 0.829);
+    font-size: var(--body-font-size);
     text-align: justify;
     padding: 1em;
 }
@@ -124,3 +130,22 @@ hr {
         display: none;
     }
 } */
+
+/* @font-face {
+    font-family: "linja lipamanka";
+    src: url("/fonts/linjalipamanka-normal.otf");
+} */
+
+.sitelen-pona {
+    font-size: calc(var(--body-font-size) + 1.2rem);
+    font-family: "linja lipamanka";
+}
+
+.sitelen-pona h2 {
+    font-size: calc(var(--h2-font-size) + 2rem);
+    line-height: normal;
+}
+
+.sitelen-pona sup {
+    font-family: "AveriaSerifLibre", "Averia Serif Libre", "Cambria", serif;
+}
