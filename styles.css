@@ -32,6 +32,9 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     /*min-width: 100%;*/
     /* makes unable to drag: */
     user-drag: none; 
@@ -115,3 +118,9 @@ hr {
 .social img {
     height: 1em;
 }
+
+/* @media (min-width: 40rem) {
+    img[src~="construction.gif"] {
+        display: none;
+    }
+} */
