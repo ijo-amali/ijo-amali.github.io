@@ -107,6 +107,7 @@ hr {
 
 .beeper {
     padding: 1rem 0 !important;
+    image-rendering: pixelated;
 }
 
 .socialcontainer {
