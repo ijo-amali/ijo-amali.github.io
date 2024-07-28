@@ -136,6 +136,12 @@ hr {
     height: 1em;
 }
 
+@media (min-width: 1123px) {
+    .responsive-size {
+        width: 50%;
+    }
+}
+
 /* @media (min-width: 40rem) {
     img[src~="construction.gif"] {
         display: none;
