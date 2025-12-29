@@ -32,6 +32,15 @@ ul {
     padding-left: none;
 }
 
+ol.dialouge {
+    list-style-position: outside;
+    margin-left: 3em;
+}
+
+ol.dialouge li::marker {
+    content: attr(data-char);
+}
+
 #paper-texture {
     opacity: 0.25;
     position: fixed;
@@ -127,6 +136,12 @@ hr {
     height: 1em;
 }
 
+@media (min-width: 1123px) {
+    .responsive-size {
+        width: 50%;
+    }
+}
+
 /* @media (min-width: 40rem) {
     img[src~="construction.gif"] {
         display: none;
@@ -134,13 +149,13 @@ hr {
 } */
 
 @font-face {
-    font-family: "linja lipamanka";
+    font-family: "linja-lipamanka";
     src: url("/fonts/linjalipamanka-normal.otf");
 }
 
 .sitelen-pona {
     font-size: calc(var(--body-font-size) + 1.2rem);
-    font-family: "linja lipamanka";
+    font-family: "linja lipamanka", "linja-lipamanka";
     font-feature-settings: "liga" 1, "clig" 1, "calt" 1, "kern" 1, "mark" 1;
     text-rendering: optimizeLegibility;
 }
